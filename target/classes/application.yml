@@ -1,0 +1,16 @@
+spring:
+  datasource:
+    driverClassName: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/csa_cw?useSSL=false
+    username: root
+    password: root
+  jpa:
+    hibernate.ddl-auto: update
+    generate-ddl: true
+    show-sql: true
+server:
+  port: 9090
+#csa_cw
+#Change with the db name
+# hibernate.ddl-auto: create
+# if you want to create the tables according to the objects
