@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping(value = "/rest/users")
+@RequestMapping(value = "/users")
 public class UsersResource {
 
     @Autowired
@@ -19,10 +19,22 @@ public class UsersResource {
         return usersRepository.findAll();
     }
 
-    @PostMapping(value = "/load")
+    @PostMapping(value = "/signup")
     public List<Users> persist(@RequestBody final Users users) {
         usersRepository.save(users);
         return usersRepository.findAll();
+    }
+
+    @GetMapping(value = "/getUsers/{userName}")
+    public String getUser(@PathVariable String userName){
+        List<Users> AllUsers = usersRepository.findAll();
+        for(Users user:AllUsers){
+            if (user.getUsername().equals(userName)){
+                return user.getPassword();
+            }
+        }
+        return "sorry user not found";
+
     }
 
 }
