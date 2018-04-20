@@ -14,6 +14,9 @@ public class UsersResource {
     @Autowired
     UsersRepository usersRepository;
 
+
+
+
     @GetMapping(value = "/all")
     public List<Users> getAll() {
         return usersRepository.findAll();
@@ -23,6 +26,17 @@ public class UsersResource {
     public List<Users> persist(@RequestBody final Users users) {
         usersRepository.save(users);
         return usersRepository.findAll();
+    }
+
+    @PostMapping(value = "login")
+    public Boolean login(@RequestBody final Users users){
+        List<Users> allUsers = usersRepository.findAll();
+        for (Users user:allUsers){
+            if (user.getUsername().equals(users.getUsername())&&user.getPassword().equals(users.getPassword())){
+                return true;
+            }
+        }
+        return false;
     }
 
     @GetMapping(value = "/getUsers/{userName}")
