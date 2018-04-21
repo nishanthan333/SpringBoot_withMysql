@@ -20,7 +20,7 @@ public class Threads {
     String LastEditedDate;
 
     public Threads(){
-        
+
     }
 
     public Integer getThreadId() {

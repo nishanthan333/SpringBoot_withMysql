@@ -54,7 +54,7 @@ public class ThreadResource {
             if (chat.getCreatedBy().equals(user.getUsername())){
                 userChats.add(chat);
             }
-        }
+       }
 
         if(userChats.get(0).toString()==null){
             return null;
@@ -63,5 +63,7 @@ public class ThreadResource {
             return userChats;
         }
     }
+
+//    @PutMapping(value = "/ed")
 
 }

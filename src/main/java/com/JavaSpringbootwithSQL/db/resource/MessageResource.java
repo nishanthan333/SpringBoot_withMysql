@@ -61,5 +61,17 @@ public class MessageResource {
         return messageRepo.findAll();
     }
 
+    @PostMapping(value = "/thread")
+    public List<Message> getAllThreadMessages(@RequestBody final Threads thread){
+        List<Message> threadMessage = new ArrayList<Message>();
 
+        for (Message message:messageRepo.findAll()){
+            if (message.getThreadId().equals(thread.getThreadId())){
+                threadMessage.add(message);
+            }
+        }
+        return threadMessage;
     }
+
+
+}
