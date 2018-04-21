@@ -41,8 +41,8 @@ public class ThreadResource {
     }
 
     @PostMapping(value = "/create")
-    public List<Threads> persist(@RequestBody final Threads chat) {
-        threadRepo.save(chat);
+    public List<Threads> persist(@RequestBody final Threads threads) {
+        threadRepo.save(threads);
         return threadRepo.findAll();
     }
 

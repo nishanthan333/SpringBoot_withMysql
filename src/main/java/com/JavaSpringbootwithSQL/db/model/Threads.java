@@ -7,9 +7,10 @@ import javax.persistence.Id;
 
 @Entity
 public class Threads {
+
     @Id
     @GeneratedValue
-    @Column(name = "id")
+    @Column(name = "threadId")
     Integer threadId;
     @Column(name = "threadTitle")
     String threadTitle;

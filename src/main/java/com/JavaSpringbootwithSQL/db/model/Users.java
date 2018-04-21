@@ -7,7 +7,7 @@ public class Users {
 
     @Id
     @GeneratedValue
-    @Column(name = "id")
+    @Column(name = "userId")
     private Integer UserId;
     @Column(name = "UserName")
     private String Username;
