@@ -19,7 +19,9 @@ public class Threads {
     @Column(name = "LastEditedDate")
     String LastEditedDate;
 
-    public Threads(){}
+    public Threads(){
+        
+    }
 
     public Integer getThreadId() {
         return threadId;

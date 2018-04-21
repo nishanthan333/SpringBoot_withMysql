@@ -6,10 +6,7 @@ import com.JavaSpringbootwithSQL.db.repository.MessageRepository;
 import com.JavaSpringbootwithSQL.db.repository.ThreadsRepository;
 import com.JavaSpringbootwithSQL.db.repository.UsersRepository;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -58,6 +55,11 @@ public class MessageResource {
         return threadMessage;
     }
 
+    @PostMapping(value = "/create")
+    public List<Message> createMessage(@RequestBody final Message message){
+        messageRepo.save(message);
+        return messageRepo.findAll();
+    }
 
 
     }
