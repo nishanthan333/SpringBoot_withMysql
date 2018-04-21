@@ -23,9 +23,16 @@ public class UsersResource {
     }
 
     @PostMapping(value = "/signup")
-    public List<Users> persist(@RequestBody final Users users) {
+    public Boolean persist(@RequestBody final Users users) {
+        List<Users> allUsers = usersRepository.findAll();
+        for (Users user:allUsers){
+            if (user.getUsername().equals(users.getUsername())){
+                return false;
+            }
+        }
         usersRepository.save(users);
-        return usersRepository.findAll();
+
+        return true;
     }
 
     @PostMapping(value = "login")
