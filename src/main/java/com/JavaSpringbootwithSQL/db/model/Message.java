@@ -14,18 +14,9 @@ public class Message {
     @Column(name = "messageId")
     Integer messageId;
 
-//    @JsonIgnore
-//  @ManyToOne(fetch = FetchType.EAGER)
-//  @JoinColumn(name = "eligibleId")
-//  private Eligible eligible;
-//    @JsonIgnore
-//    @ManyToOne(fetch = FetchType.EAGER)
-
     @JoinColumn(name = "userId")
     Integer userId;
-//
-//    @JsonIgnore
-//    @ManyToOne(fetch = FetchType.EAGER)
+
     @JoinColumn(name = "threadId")
     Integer threadId;
 
