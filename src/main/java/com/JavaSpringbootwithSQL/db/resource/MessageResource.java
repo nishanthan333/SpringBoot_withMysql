@@ -45,6 +45,19 @@ public class MessageResource {
         return userMessages;
     }
 
+    @GetMapping(value = "/thread/{threadId}")
+    public List<Message> getMessagesOfThread(@PathVariable Integer threadId) {
+        List<Message> threadMessage = new ArrayList<Message>();
+
+        for (Message message:messageRepo.findAll()){
+            if (message.getThreadId().equals(threadId)){
+                threadMessage.add(message);
+            }
+        }
+
+        return threadMessage;
+    }
 
 
-}
+
+    }
