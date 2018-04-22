@@ -64,6 +64,5 @@ public class ThreadResource {
         }
     }
 
-//    @PutMapping(value = "/ed")
 
 }
