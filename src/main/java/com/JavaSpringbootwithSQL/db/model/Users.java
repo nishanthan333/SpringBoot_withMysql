@@ -13,8 +13,6 @@ public class Users {
     private String Username;
     @Column(name = "password")
     private String password;
-    @Column(name = "email")
-    private String email;
     @Column(name = "nickName")
     private String nickName;
 
@@ -41,14 +39,6 @@ public class Users {
 
     public void setPassword(String password) {
         this.password = password;
-    }
-
-    public String getEmail() {
-        return email;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
     }
 
     public String getNickName() {
