@@ -8,6 +8,8 @@ import com.JavaSpringbootwithSQL.db.repository.UsersRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -57,6 +59,20 @@ public class MessageResource {
 
     @PostMapping(value = "/create")
     public List<Message> createMessage(@RequestBody final Message message){
+        DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy/MM/dd HH:mm:ss");
+        LocalDateTime now = LocalDateTime.now();
+
+        List<Threads> getThreads = new ArrayList<Threads>();
+
+        for (Threads thread:threadRepo.findAll()){
+            if (thread.getThreadId().equals(message.getThreadId())){
+                thread.setLastEditedDate(dtf.format(now));
+                threadRepo.save(thread);
+            }
+        }
+
+        System.out.println();
+        message.setLastEdited(dtf.format(now));
         messageRepo.save(message);
         return messageRepo.findAll();
     }

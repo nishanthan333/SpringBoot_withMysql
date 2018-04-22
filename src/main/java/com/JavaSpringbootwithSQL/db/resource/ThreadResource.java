@@ -64,5 +64,13 @@ public class ThreadResource {
         }
     }
 
+//    @PostMapping(value = "/edit")
+//    public Threads editThread(@RequestBody final Threads thread){
+//        List<Threads> allThreads = threadRepo.findAll();
+//        return null;
+//    }
+
+
+//    @PutMapping(value = "/ed")
 
 }
