@@ -20,9 +20,6 @@ public class Message {
 //  private Eligible eligible;
 //    @JsonIgnore
 //    @ManyToOne(fetch = FetchType.EAGER)
-
-    @JoinColumn(name = "userId")
-    Integer userId;
 //
 //    @JsonIgnore
 //    @ManyToOne(fetch = FetchType.EAGER)
@@ -46,14 +43,6 @@ public class Message {
 
     public void setMessageId(Integer messageId) {
         this.messageId = messageId;
-    }
-
-    public Integer getUserId() {
-        return userId;
-    }
-
-    public void setUserId(Integer userId) {
-        this.userId = userId;
     }
 
     public Integer getThreadId() {
