@@ -28,19 +28,19 @@ public class MessageResource {
         return messageRepo.findAll();
     }
 
-    @GetMapping(value = "/user/{userId}")
-    public List<Message> getUserMessages(@PathVariable Integer userId){
-
-        List<Message> userMessages = new ArrayList<Message>();
-
-        for(Message message:messageRepo.findAll()){
-            if (message.getUserId().equals(userId)){
-                userMessages.add(message);
-            }
-        }
-
-        return userMessages;
-    }
+//    @GetMapping(value = "/user/{userId}")
+//    public List<Message> getUserMessages(@PathVariable Integer userId){
+//
+//        List<Message> userMessages = new ArrayList<Message>();
+//
+//        for(Message message:messageRepo.findAll()){
+//            if (message.getUserId().equals(userId)){
+//                userMessages.add(message);
+//            }
+//        }
+//
+//        return userMessages;
+//    }
 
     @GetMapping(value = "/thread/{threadId}")
     public List<Message> getMessagesOfThread(@PathVariable Integer threadId) {

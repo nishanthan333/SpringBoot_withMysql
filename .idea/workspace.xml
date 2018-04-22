@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5979b45c-2f4f-4509-a4da-743f4d119fad" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/JavaSpringbootwithSQL/db/model/Message.java" afterPath="$PROJECT_DIR$/src/main/java/com/JavaSpringbootwithSQL/db/model/Message.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/JavaSpringbootwithSQL/db/resource/MessageResource.java" afterPath="$PROJECT_DIR$/src/main/java/com/JavaSpringbootwithSQL/db/resource/MessageResource.java" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -57,18 +57,17 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MessageResource.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="MessageResource.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/JavaSpringbootwithSQL/db/resource/MessageResource.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="71">
-              <caret line="30" column="38" lean-forward="false" selection-start-line="30" selection-start-column="32" selection-end-line="30" selection-end-column="38" />
+            <state relative-caret-position="43">
+              <caret line="30" column="6" lean-forward="true" selection-start-line="30" selection-start-column="6" selection-end-line="42" selection-end-column="7" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#816#817#0" expanded="true" />
                 <element signature="e#860#861#0" expanded="true" />
-                <element signature="e#1028#1037#0" expanded="true" />
-                <element signature="e#1427#1436#0" expanded="true" />
-                <element signature="e#2018#2027#0" expanded="true" />
+                <element signature="e#1453#1462#0" expanded="true" />
+                <element signature="e#2044#2053#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -128,7 +127,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Message.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Message.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/JavaSpringbootwithSQL/db/model/Message.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="138">
@@ -200,11 +199,11 @@
         <option value="$PROJECT_DIR$/src/main/java/com/JavaSpringbootwithSQL/db/repository/MessageRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/JavaSpringbootwithSQL/db/model/Threads.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/JavaSpringbootwithSQL/db/resource/ThreadResource.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/JavaSpringbootwithSQL/db/resource/MessageResource.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/JavaSpringbootwithSQL/db/repository/UsersRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/JavaSpringbootwithSQL/db/resource/UsersResource.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/JavaSpringbootwithSQL/db/model/Users.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/JavaSpringbootwithSQL/db/model/Message.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/JavaSpringbootwithSQL/db/resource/MessageResource.java" />
       </list>
     </option>
   </component>
@@ -444,12 +443,12 @@
       <workItem from="1524212149547" duration="599000" />
       <workItem from="1524279495107" duration="2415000" />
       <workItem from="1524288758379" duration="9772000" />
-      <workItem from="1524321784740" duration="17259000" />
+      <workItem from="1524321784740" duration="17878000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="38583000" />
+    <option name="totallyTimeSpent" value="39202000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1366" y="-6" width="1366" height="717" extended-state="6" />
@@ -471,7 +470,7 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.66382253" sideWeight="0.49697885" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.66382253" sideWeight="0.49697885" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.7866894" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -909,21 +908,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/JavaSpringbootwithSQL/db/resource/MessageResource.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="71">
-          <caret line="30" column="38" lean-forward="false" selection-start-line="30" selection-start-column="32" selection-end-line="30" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#816#817#0" expanded="true" />
-            <element signature="e#860#861#0" expanded="true" />
-            <element signature="e#1028#1037#0" expanded="true" />
-            <element signature="e#1427#1436#0" expanded="true" />
-            <element signature="e#2018#2027#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/JavaSpringbootwithSQL/db/repository/UsersRepository.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="161">
@@ -997,6 +981,20 @@
             <element signature="e#1540#1541#0" expanded="true" />
             <element signature="e#1596#1597#0" expanded="true" />
             <element signature="e#1644#1645#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/JavaSpringbootwithSQL/db/resource/MessageResource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="43">
+          <caret line="30" column="6" lean-forward="true" selection-start-line="30" selection-start-column="6" selection-end-line="42" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#816#817#0" expanded="true" />
+            <element signature="e#860#861#0" expanded="true" />
+            <element signature="e#1453#1462#0" expanded="true" />
+            <element signature="e#2044#2053#0" expanded="true" />
           </folding>
         </state>
       </provider>
